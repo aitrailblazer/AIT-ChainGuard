@@ -453,7 +453,7 @@ async function readTransaction() {
           class="w-full max-w-2xl mt-10"
         >
           <button
-            class="btn1"
+            class="btn"
             @click="readTransaction"
             :disabled="!transactionId"
           >
