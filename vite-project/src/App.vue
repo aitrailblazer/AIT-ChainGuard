@@ -436,12 +436,12 @@ async function readTransaction() {
         <div class="buttons">
           <!-- Button: Store Data Permanently on Arweave -->
           <section
-            v-if="personalEntries.length > 0"
+          
             class="w-full max-w-2xl mt-10"
           >
             <button
               class="btn"
-              @click="fetchFromWeb5AndStoreDataPermanently"
+              @click="fetchFromWeb5AndStoreDataPermanently" :disabled="!personalEntries"
             >
               Store Data Permanently on Arweave
             </button>

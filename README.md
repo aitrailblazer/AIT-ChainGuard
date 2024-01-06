@@ -624,7 +624,6 @@ During subsequent interactions, users might choose to delete data from Web5, mod
 
 Second run: Read permanent data from arweaver.
 
-![AIT-ChainGuard Interface](img/ChainGuard09.png)
 
 Finally, users can re-read the permanent data from Arweave, ensuring that all their data management activities are reflected in their secure and immutable data storage.
 
