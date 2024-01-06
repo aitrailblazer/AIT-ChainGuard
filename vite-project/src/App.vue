@@ -402,7 +402,7 @@ async function readTransaction() {
     </section>
 
     <!-- Section: Display Personal Data Entries -->
-    <section class="w-full max-w-2xl mt-10">
+    <section v-if="personalEntries.length > 0" class="w-full max-w-2xl mt-10">
       <!-- Container for personal data entries -->
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <ul>
@@ -442,7 +442,6 @@ async function readTransaction() {
             <button
               class="btn"
               @click="fetchFromWeb5AndStoreDataPermanently"
-              :disabled="!transactionId"
             >
               Store Data Permanently on Arweave
             </button>
