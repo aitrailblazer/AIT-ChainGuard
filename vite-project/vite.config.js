@@ -11,4 +11,6 @@ export default defineConfig({
     global: 'globalThis'
   },
   plugins: [vue(), nodePolyfills()],
+  logLevel: 'info', // Set the log level to 'info' to enable log messages
+
 });
