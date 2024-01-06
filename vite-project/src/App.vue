@@ -64,6 +64,9 @@ onBeforeMount(async () => {
       personalEntries.value.push(entry);
     }
 
+    const personalEntriesJSON = JSON.stringify(personalEntries);
+    console.log("onBeforeMount: personalEntries: ",personalEntriesJSON);
+
     // Fetch and log transaction records
     console.log("onBeforeMount: Attempting to load transaction records...");
     const transactionDataRecords = await web5.dwn.records.query({
