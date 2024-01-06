@@ -441,7 +441,7 @@ async function readTransaction() {
           >
             <button
               class="btn"
-              @click="fetchFromWeb5AndStoreDataPermanently" :disabled="personalEntries.length == 0"
+              @click="fetchFromWeb5AndStoreDataPermanently" :disabled="personalEntries.length === 0"
             >
               Store Data Permanently on Arweave
             </button>
