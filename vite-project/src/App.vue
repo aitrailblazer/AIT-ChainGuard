@@ -402,7 +402,7 @@ async function readTransaction() {
     </section>
 
     <!-- Section: Display Personal Data Entries -->
-    <section v-if="personalEntries.length > 0" class="w-full max-w-2xl mt-10">
+    <section class="w-full max-w-2xl mt-10">
       <!-- Container for personal data entries -->
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <ul>
