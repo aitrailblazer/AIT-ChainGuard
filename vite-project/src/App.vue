@@ -5,7 +5,7 @@ import { onBeforeMount, ref } from "vue";
 import { TrashIcon } from "@heroicons/vue/solid";
 import { Web5 } from "@web5/api"; // Decentralized web API
 import Arweave from "arweave"; // Arweave SDK for interaction with Arweave network
-import logo from '@/assets/AITChainGuard.png';
+import logo from "./assets/AITChainGuard.png";
 
 // Reactive state variables to hold data and manage state
 let web5; // Instance of Web5 connection
@@ -66,7 +66,7 @@ onBeforeMount(async () => {
     }
 
     const personalEntriesJSON = JSON.stringify(personalEntries.value);
-    console.log("onBeforeMount: personalEntries: ",personalEntriesJSON);
+    console.log("onBeforeMount: personalEntries: ", personalEntriesJSON);
 
     // Fetch and log transaction records
     console.log("onBeforeMount: Attempting to load transaction records...");
@@ -338,9 +338,8 @@ async function readTransaction() {
   <div
     class="flex flex-col items-center justify-center min-h-full px-8 py-12 sm:px-6"
   >
-  <!-- Logo -->
-  <img :src="logo" alt="AIT-ChainGuard Logo" class="mb-4" />
-  
+    <!-- Logo -->
+    <img :src="logo" alt="AIT-ChainGuard Logo" class="mb-4" style="width: 100px; height: auto;" />
     <!-- Section: Application Title and Connection Status -->
     <div class="sm:max-w-md sm:w-full mb-10">
       <!-- Title Display -->
@@ -435,35 +434,30 @@ async function readTransaction() {
     </section>
 
     <!-- Section: Buttons for Permanent Storage and Data Retrieval -->
-    <section  class="w-full max-w-2xl mt-10">
+    <section class="w-full max-w-2xl mt-10">
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div class="buttons">
           <!-- Button: Store Data Permanently on Arweave -->
-          <section
-          
-            class="w-full max-w-2xl mt-10"
-          >
+          <section class="w-full max-w-2xl mt-10">
             <button
               class="btn"
-              @click="fetchFromWeb5AndStoreDataPermanently" :disabled="personalEntries.length === 0"
+              @click="fetchFromWeb5AndStoreDataPermanently"
+              :disabled="personalEntries.length === 0"
             >
               Store Data Permanently on Arweave
             </button>
           </section>
 
           <!-- Button: Read Data from Arweave -->
-          <section
-          
-          class="w-full max-w-2xl mt-10"
-        >
-          <button
-            class="btn1"
-            @click="readTransaction"
-            :disabled="!transactionId"
-          >
-            Read Data from Arweave
-          </button>
-        </section>
+          <section class="w-full max-w-2xl mt-10">
+            <button
+              class="btn1"
+              @click="readTransaction"
+              :disabled="!transactionId"
+            >
+              Read Data from Arweave
+            </button>
+          </section>
         </div>
 
         <!-- Display: Retrieved data from Arweave -->
