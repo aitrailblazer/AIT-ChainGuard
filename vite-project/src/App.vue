@@ -453,7 +453,7 @@ async function readTransaction() {
           class="w-full max-w-2xl mt-10"
         >
           <button
-            class="btn"
+            class="btn1"
             @click="readTransaction"
             :disabled="!transactionId"
           >
@@ -513,10 +513,11 @@ async function readTransaction() {
   background-color: #ccc;
   cursor: not-allowed;
 }
-.btn1:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+button.btn1:disabled {
+  background-color: #ccc !important; /* increased specificity and importance */
+  cursor: not-allowed !important;
 }
+
 .output {
   margin-top: 20px;
   padding: 20px;
