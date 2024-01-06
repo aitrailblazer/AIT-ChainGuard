@@ -5,6 +5,7 @@ import { onBeforeMount, ref } from "vue";
 import { TrashIcon } from "@heroicons/vue/solid";
 import { Web5 } from "@web5/api"; // Decentralized web API
 import Arweave from "arweave"; // Arweave SDK for interaction with Arweave network
+import logo from '@/assets/AITChainGuard.png';
 
 // Reactive state variables to hold data and manage state
 let web5; // Instance of Web5 connection
@@ -337,6 +338,9 @@ async function readTransaction() {
   <div
     class="flex flex-col items-center justify-center min-h-full px-8 py-12 sm:px-6"
   >
+  <!-- Logo -->
+  <img :src="logo" alt="AIT-ChainGuard Logo" class="mb-4" />
+  
     <!-- Section: Application Title and Connection Status -->
     <div class="sm:max-w-md sm:w-full mb-10">
       <!-- Title Display -->
