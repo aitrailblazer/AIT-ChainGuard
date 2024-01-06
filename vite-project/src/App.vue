@@ -64,7 +64,7 @@ onBeforeMount(async () => {
       personalEntries.value.push(entry);
     }
 
-    const personalEntriesJSON = JSON.stringify(personalEntries);
+    const personalEntriesJSON = JSON.stringify(personalEntries.value);
     console.log("onBeforeMount: personalEntries: ",personalEntriesJSON);
 
     // Fetch and log transaction records
