@@ -581,14 +581,6 @@ First run: Add more records to personal data. Adding middle name.
 Users can add more records to their personal data, such as a middle name or other pertinent details, expanding their data profile within the application.
 
 
-First run: Store multiple record data permanantly to arweaver.
-
-First run: Read  multiple record data permanent data from arweaver.
-
-![AIT-ChainGuard Interface](img/ChainGuard06.png)
-
-Users proceed to store these additional records permanently on Arweave, further securing and expanding their data footprint.
-
 Multiple data records can then be read and verified from Arweave, showcasing the application's capability to handle and preserve a variety of personal data types.
 
 
