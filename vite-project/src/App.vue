@@ -513,7 +513,10 @@ async function readTransaction() {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
+.btn1:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 .output {
   margin-top: 20px;
   padding: 20px;
