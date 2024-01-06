@@ -574,6 +574,17 @@ Once the data is managed within Web5, users have the option to store it permanen
 
 After storing the data, users can read and verify the permanent data from Arweave, ensuring that their information is intact and retrievable.
 
+
+When starting to store the permanent data to ARweave for first time the ARConnect wallet appears, enter your password.
+
+![AIT-ChainGuard Interface](img/ChainGuard3.1.png)
+
+
+The wallet needs approval for these permissions. 
+
+![AIT-ChainGuard Interface](img/ChainGuard3.2.png)
+
+
 First run: Add more records to personal data. Adding middle name.
 
 ![AIT-ChainGuard Interface](img/ChainGuard05.png)
