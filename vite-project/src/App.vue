@@ -448,13 +448,18 @@ async function readTransaction() {
           </section>
 
           <!-- Button: Read Data from Arweave -->
+          <section
+          
+          class="w-full max-w-2xl mt-10"
+        >
           <button
-            class="btn"
+            class="btn1"
             @click="readTransaction"
             :disabled="!transactionId"
           >
             Read Data from Arweave
           </button>
+        </section>
         </div>
 
         <!-- Display: Retrieved data from Arweave -->
@@ -495,7 +500,15 @@ async function readTransaction() {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
+.btn1 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00834cd5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 .btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
