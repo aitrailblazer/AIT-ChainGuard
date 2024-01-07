@@ -339,12 +339,17 @@ async function readTransaction() {
     class="flex flex-col items-center justify-center min-h-full px-8 py-12 sm:px-6"
   >
     <!-- Logo -->
-    <img :src="logo" alt="AIT-ChainGuard Logo" class="mb-4" style="width: 100px; height: auto;" />
+    <img
+      :src="logo"
+      alt="AIT-ChainGuard Logo"
+      class="mb-4"
+      style="width: 100px; height: auto"
+    />
     <!-- Section: Application Title and Connection Status -->
     <div class="sm:max-w-md sm:w-full mb-10">
       <!-- Title Display -->
       <h2 class="font-bold text-3xl text-center tracking-tight mb-2">
-        ChainGuard Personal Data
+        AIT-ChainGuard Personal Data
         <!-- Title for the application -->
       </h2>
       <!-- Connection Status Indication -->
@@ -464,6 +469,185 @@ async function readTransaction() {
         <div class="output" v-if="retrievedData">
           <p>Retrieved Data from Arweave: {{ retrievedData }}</p>
         </div>
+      </div>
+    </section>
+
+    <section class="mt-4 text-gray-500 max-w-xl mx-auto">
+      <h1 class="text-center text-2xl font-bold mb-4">
+        AIT-ChainGuard User Interface Journey
+      </h1>
+      <p>
+        Explore the AIT-ChainGuard application's user interface, detailing how
+        users interact and manage their personal data using the decentralized
+        capabilities of Web5 and Arweave.
+      </p>
+
+      <div>
+        <h2 class="text-xl font-bold mb-2">First Run: Initial Data Entry</h2>
+        <p>
+          As users begin their journey, they are greeted with a prompt to enter
+          personal data, marking the commencement of their data management
+          journey. Enter your name and a personal note as a foundational step.
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">Adding Data to Web5</h2>
+        <p>
+          Post initial data entry, users seamlessly transition to adding their
+          data into the Web5 infrastructure, marking the first step in
+          decentralized data management. Simply click "Add Data" to proceed.
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">
+          Storing Data Permanently on Arweave
+        </h2>
+        <p>
+          Ensuring data permanence and integrity, users have the option to store
+          their data on Arweave. On your first attempt, the ARConnect wallet
+          will request credentials and permissions. Secure your data by
+          selecting "Store Data Permanently on Arweave" and then verify the
+          storage by clicking "Read Data from Arweave".
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">Managing and Verifying Data</h2>
+        <p>
+          AIT-ChainGuard empowers users to manage their data actively. Add
+          additional records, adjust existing data, or delete as needed. Each
+          action reflects instantly in your personal data profile, offering a
+          real-time view of your digital footprint.
+        </p>
+
+        <h2 class="text-xl font-bold mb-2">
+          Second Run: Ongoing Accessibility
+        </h2>
+        <p>
+          Returning to AIT-ChainGuard is as smooth as the first visit.
+          Refreshing the browser re-engages the user with the application,
+          allowing immediate access and management of stored data on Arweave.
+          Continue where you left off, with all your data securely stored and
+          readily accessible.
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-4 text-gray-500 max-w-xl mx-auto">
+      <h1 class="text-center text-2xl font-bold mb-4">
+        Why ARConnect Wallet is Required for AIT-ChainGuard
+      </h1>
+      <p>
+        ARConnect wallet is an essential component for AIT-ChainGuard for
+        several key reasons:
+      </p>
+      <ul class="list-disc list-inside">
+        <li>
+          <strong>Decentralized Storage:</strong> AIT-ChainGuard relies on
+          Arweave's decentralized data storage for immutable and permanent data
+          retention, crucial for the integrity and reliability of the data it
+          handles.
+        </li>
+        <li>
+          <strong>Transaction Management:</strong> As a gateway to the Arweave
+          network, ARConnect handles transactions, allowing users to upload
+          data, interact with smart contracts, and perform other network
+          operations.
+        </li>
+        <li>
+          <strong>User Identity and Security:</strong> ARConnect ensures users'
+          identities are securely managed, safeguarding access and interactions
+          with the network and maintaining the privacy and security of users'
+          data.
+        </li>
+        <li>
+          <strong>Ease of Use:</strong> For those unfamiliar with blockchain
+          technology, ARConnect provides a user-friendly interface, making it
+          easier for users to manage their wallets and interact with
+          AIT-ChainGuard's features.
+        </li>
+        <li>
+          <strong>Smart Contract Interaction:</strong> If AIT-ChainGuard uses
+          smart contracts, ARConnect is critical for executing and interacting
+          with these contracts on the Arweave network.
+        </li>
+      </ul>
+      <p>
+        Overall, ARConnect wallet is a crucial tool for anyone looking to
+        interact with the Arweave network, offering secure, user-friendly, and
+        efficient access to decentralized services provided by AIT-ChainGuard.
+      </p>
+    </section>
+
+    <section class="mt-4 text-gray-500 max-w-xl mx-auto">
+      <h1 class="text-center text-2xl font-bold mb-4">
+        ARConnect Wallet Guide
+      </h1>
+      <div class="mb-6">
+        Need assistance with ARConnect? Visit the
+        <a href="https://arconnect.io/" target="_blank" class="text-blue-500"
+          >ARConnect Support</a
+        >
+        website for support and FAQs.
+      </div>
+
+      <div>
+        <p>
+          To download ArConnect, a browser extension for interacting with the
+          Arweave network, follow these steps:
+        </p>
+        <ol class="list-decimal list-inside">
+          <li>
+            Open your preferred web browser (ArConnect is available for Chrome
+            and Firefox).
+          </li>
+          <li>
+            Go to the official ArConnect website:
+            <a
+              href="https://arconnect.io/"
+              target="_blank"
+              class="text-blue-500"
+              >https://arconnect.io/</a
+            >.
+          </li>
+          <li>
+            On the ArConnect website, you should see download links for both
+            Chrome and Firefox. Click on the link that corresponds to your
+            browser. For example, if you are using Google Chrome, click on the
+            "Download for Chrome" button.
+          </li>
+          <li>
+            You will be redirected to the Chrome Web Store or Firefox Add-ons
+            website (depending on your browser choice).
+          </li>
+          <li>
+            On the Chrome Web Store or Firefox Add-ons page, click the "Add to
+            Chrome" or "Add to Firefox" button, respectively.
+          </li>
+          <li>
+            A pop-up window will appear, asking you to confirm the installation
+            of the extension. Click the "Add Extension" or "Add" button to
+            proceed with the installation.
+          </li>
+          <li>
+            The extension will be downloaded and added to your browser. You
+            should see the ArConnect icon in your browser's toolbar.
+          </li>
+          <li>
+            Click on the ArConnect icon to open the extension. You may need to
+            set up your wallet and grant permissions to use it with Arweave.
+          </li>
+          <li>
+            Follow the on-screen instructions to create or import a wallet and
+            connect it to the Arweave network.
+          </li>
+          <li>
+            Once your wallet is set up and connected, you can start using
+            ArConnect to interact with Arweave decentralized applications
+            (dApps) and perform transactions on the Arweave network.
+          </li>
+          <li>
+            That's it! You've successfully downloaded and installed ArConnect
+            for your browser. You can now use it to manage your Arweave wallet
+            and engage with the Arweave ecosystem.
+          </li>
+        </ol>
       </div>
     </section>
   </div>
